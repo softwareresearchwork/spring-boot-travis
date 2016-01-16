@@ -40,7 +40,7 @@ public class HelloControllerIntegrationTest {
 	@Test
 	public void testPing() throws Exception {
 		final ResponseEntity<String> response = template.getForEntity(base.toString() + "/hello/ping", String.class);
-		assertThat(response.getBody(), equalTo("pong"));
+		assertThat(response.getBody(), equalTo("pong!"));
 	}
 
 }

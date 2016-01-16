@@ -34,7 +34,7 @@ public class HelloControllerTest {
 		mvc.perform(MockMvcRequestBuilders.get("/hello/ping")
 		   .accept(MediaType.TEXT_PLAIN))
 		   .andExpect(status().isOk())
-		   .andExpect(content().string(equalTo("pong")));
+		   .andExpect(content().string(equalTo("pong!")));
 		// @formatter:on
 	}
 
