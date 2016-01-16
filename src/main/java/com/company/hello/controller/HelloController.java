@@ -9,6 +9,6 @@ public class HelloController {
 
 	@RequestMapping("/ping")
 	public String ping() {
-		return "pong";
+		return "pong!";
 	}
 }
